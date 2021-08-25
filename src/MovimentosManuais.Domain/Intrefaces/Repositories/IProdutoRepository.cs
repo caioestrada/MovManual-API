@@ -1,7 +1,7 @@
-﻿using MovimentosManuais.Infra.Data.Entities;
+﻿using MovimentosManuais.Domain.Entities;
 using System.Collections.Generic;
 
-namespace MovimentosManuais.Infra.Data.Interfaces
+namespace MovimentosManuais.Domain.Interfaces.Repositories
 {
     public interface IProdutoRepository
     {

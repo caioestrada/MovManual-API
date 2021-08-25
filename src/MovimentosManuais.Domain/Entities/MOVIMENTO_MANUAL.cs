@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MovimentosManuais.Infra.Data.Entities
+namespace MovimentosManuais.Domain.Entities
 {
     public partial class MOVIMENTO_MANUAL
     {

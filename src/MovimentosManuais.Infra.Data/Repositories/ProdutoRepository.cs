@@ -1,6 +1,6 @@
-﻿using MovimentosManuais.Infra.Data.Context;
-using MovimentosManuais.Infra.Data.Entities;
-using MovimentosManuais.Infra.Data.Interfaces;
+﻿using MovimentosManuais.Domain.Entities;
+using MovimentosManuais.Domain.Interfaces.Repositories;
+using MovimentosManuais.Infra.Data.Context;
 using System.Collections.Generic;
 
 namespace MovimentosManuais.Infra.Data.Repositories
@@ -16,7 +16,7 @@ namespace MovimentosManuais.Infra.Data.Repositories
 
         public IEnumerable<PRODUTO> ObterTodos()
         {
-            return _movimentoContext.PRODUTO;
+            return _movimentoContext.PRODUTO.Include("PRODUTO_COSIF");
         }
     }
 }

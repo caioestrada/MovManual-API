@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MovimentosManuais.Application.Interfaces;
 using MovimentosManuais.Application.ViewModels;
-using MovimentosManuais.Infra.Data.Interfaces;
+using MovimentosManuais.Domain.Interfaces.Repositories;
 using System.Collections.Generic;
 
 namespace MovimentosManuais.Application.AppServices

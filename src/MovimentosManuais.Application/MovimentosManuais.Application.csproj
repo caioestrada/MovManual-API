@@ -49,12 +49,18 @@
     <Compile Include="AutoMapper\ViewModelAutoMapper.cs" />
     <Compile Include="Interfaces\IProdutoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\MovimentoManualViewModel.cs" />
+    <Compile Include="ViewModels\ProdutoCosifViewModel.cs" />
     <Compile Include="ViewModels\ProdutoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MovimentosManuais.Domain\MovimentosManuais.Domain.csproj">
+      <Project>{5684FDD9-A6BD-4FC0-B41F-7B5DB06F2192}</Project>
+      <Name>MovimentosManuais.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MovimentosManuais.Infra.Data\MovimentosManuais.Infra.Data.csproj">
       <Project>{6F667E49-EB23-49D0-B242-1EE0B1567951}</Project>
       <Name>MovimentosManuais.Infra.Data</Name>

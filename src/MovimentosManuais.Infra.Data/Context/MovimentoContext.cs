@@ -1,4 +1,4 @@
-using MovimentosManuais.Infra.Data.Entities;
+using MovimentosManuais.Domain.Entities;
 using MovimentosManuais.Infra.Data.EntityMappings;
 using System.Data.Entity;
 

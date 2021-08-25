@@ -1,7 +1,7 @@
 ﻿using MovimentosManuais.Application.AppServices;
 using MovimentosManuais.Application.Interfaces;
+using MovimentosManuais.Domain.Interfaces.Repositories;
 using MovimentosManuais.Infra.Data.Context;
-using MovimentosManuais.Infra.Data.Interfaces;
 using MovimentosManuais.Infra.Data.Repositories;
 using SimpleInjector;
 
