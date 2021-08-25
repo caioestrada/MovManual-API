@@ -7,21 +7,21 @@ namespace MovimentosManuais.Infra.Data.EntityMappings
     {
         public static void Register(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Produto>()
+            modelBuilder.Entity<PRODUTO>()
                 .Property(e => e.COD_PRODUTO)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Produto>()
+            modelBuilder.Entity<PRODUTO>()
                 .Property(e => e.DES_PRODUTO)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Produto>()
+            modelBuilder.Entity<PRODUTO>()
                 .Property(e => e.STA_STATUS)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Produto>()
+            modelBuilder.Entity<PRODUTO>()
                 .HasMany(e => e.PRODUTO_COSIF)
                 .WithRequired(e => e.PRODUTO)
                 .WillCascadeOnDelete(false);

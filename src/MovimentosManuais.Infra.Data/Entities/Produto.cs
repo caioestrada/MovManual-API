@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MovimentosManuais.Infra.Data.Entities
 {
     [Table("PRODUTO")]
-    public partial class Produto
+    public partial class PRODUTO
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Produto()
+        public PRODUTO()
         {
-            PRODUTO_COSIF = new HashSet<ProdutoCosif>();
+            PRODUTO_COSIF = new HashSet<PRODUTO_COSIF>();
         }
 
         [Key]
@@ -24,6 +24,6 @@ namespace MovimentosManuais.Infra.Data.Entities
         public string STA_STATUS { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProdutoCosif> PRODUTO_COSIF { get; set; }
+        public virtual ICollection<PRODUTO_COSIF> PRODUTO_COSIF { get; set; }
     }
 }

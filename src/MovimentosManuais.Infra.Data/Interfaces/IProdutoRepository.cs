@@ -5,6 +5,6 @@ namespace MovimentosManuais.Infra.Data.Interfaces
 {
     public interface IProdutoRepository
     {
-        IEnumerable<Produto> ObterTodos();
+        IEnumerable<PRODUTO> ObterTodos();
     }
 }

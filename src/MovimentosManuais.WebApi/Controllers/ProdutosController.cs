@@ -1,9 +1,11 @@
 ﻿using MovimentosManuais.Application.Interfaces;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace MovimentosManuais.WebApi.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ProdutosController : ApiController
     {
         private readonly IProdutoAppService _produtoAppService;
@@ -18,7 +20,7 @@ namespace MovimentosManuais.WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IHttpActionResult Get()
+        public IHttpActionResult ObterTodos()
         {
             var produtos = _produtoAppService.ObterTodos();
             if (!produtos.Any())

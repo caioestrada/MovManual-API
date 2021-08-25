@@ -53,7 +53,7 @@
         public override void Down()
         {
             DropForeignKey("dbo.PRODUTO_COSIF", "COD_PRODUTO", "dbo.PRODUTO");
-            DropForeignKey("dbo.MOVIMENTO_MANUAL", new[] { "COD_PRODUTO", "COD_COSIF" }, "dbo.ProdutoCosifs");
+            DropForeignKey("dbo.MOVIMENTO_MANUAL", new[] { "COD_PRODUTO", "COD_COSIF" }, "dbo.PRODUTO_COSIF");
             DropIndex("dbo.PRODUTO_COSIF", new[] { "COD_PRODUTO" });
             DropIndex("dbo.MOVIMENTO_MANUAL", new[] { "COD_PRODUTO", "COD_COSIF" });
             DropTable("dbo.PRODUTO");

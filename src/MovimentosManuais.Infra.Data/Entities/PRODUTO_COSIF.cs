@@ -4,13 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovimentosManuais.Infra.Data.Entities
 {
-    [Table("PRODUTO_COSIF")]
-    public partial class ProdutoCosif
+    public partial class PRODUTO_COSIF
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ProdutoCosif()
+        public PRODUTO_COSIF()
         {
-            MOVIMENTO_MANUAL = new HashSet<MovimentoManual>();
+            MOVIMENTO_MANUAL = new HashSet<MOVIMENTO_MANUAL>();
         }
 
         [Key]
@@ -30,8 +29,8 @@ namespace MovimentosManuais.Infra.Data.Entities
         public string STA_STATUS { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MovimentoManual> MOVIMENTO_MANUAL { get; set; }
+        public virtual ICollection<MOVIMENTO_MANUAL> MOVIMENTO_MANUAL { get; set; }
 
-        public virtual Produto PRODUTO { get; set; }
+        public virtual PRODUTO PRODUTO { get; set; }
     }
 }

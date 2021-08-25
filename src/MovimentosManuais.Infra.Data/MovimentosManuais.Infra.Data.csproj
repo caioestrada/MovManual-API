@@ -107,12 +107,12 @@
     <Compile Include="EntityMappings\ProdutoMapping.cs" />
     <Compile Include="Interfaces\IProdutoRepository.cs" />
     <Compile Include="Context\MovimentoContext.cs" />
-    <Compile Include="Entities\MovimentoManual.cs" />
-    <Compile Include="Entities\Produto.cs" />
-    <Compile Include="Entities\ProdutoCosif.cs" />
-    <Compile Include="Migrations\202108242226384_MovimentoMigration.cs" />
-    <Compile Include="Migrations\202108242226384_MovimentoMigration.designer.cs">
-      <DependentUpon>202108242226384_MovimentoMigration.cs</DependentUpon>
+    <Compile Include="Entities\MOVIMENTO_MANUAL.cs" />
+    <Compile Include="Entities\PRODUTO.cs" />
+    <Compile Include="Entities\PRODUTO_COSIF.cs" />
+    <Compile Include="Migrations\202108242348107_MovimentoMigration.cs" />
+    <Compile Include="Migrations\202108242348107_MovimentoMigration.designer.cs">
+      <DependentUpon>202108242348107_MovimentoMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,8 +126,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202108242226384_MovimentoMigration.resx">
-      <DependentUpon>202108242226384_MovimentoMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202108242348107_MovimentoMigration.resx">
+      <DependentUpon>202108242348107_MovimentoMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

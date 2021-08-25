@@ -13,7 +13,7 @@ namespace MovimentosManuais.Infra.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202108242226384_MovimentoMigration"; }
+            get { return "202108242348107_MovimentoMigration"; }
         }
         
         string IMigrationMetadata.Source

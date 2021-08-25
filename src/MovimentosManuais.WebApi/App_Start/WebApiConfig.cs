@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace MovimentosManuais.WebApi
 {
@@ -9,9 +6,7 @@ namespace MovimentosManuais.WebApi
     {
         public static void Register(HttpConfiguration config)
         {
-            // Serviços e configuração da API da Web
-
-            // Rotas da API da Web
+            config.EnableCors();
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

@@ -14,9 +14,9 @@ namespace MovimentosManuais.Infra.Data.Repositories
             _movimentoContext = movimentoContext;
         }
 
-        public IEnumerable<Produto> ObterTodos()
+        public IEnumerable<PRODUTO> ObterTodos()
         {
-            return _movimentoContext.Produtos;
+            return _movimentoContext.PRODUTO;
         }
     }
 }

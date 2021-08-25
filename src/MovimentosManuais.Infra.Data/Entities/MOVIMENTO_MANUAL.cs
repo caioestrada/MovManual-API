@@ -4,8 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovimentosManuais.Infra.Data.Entities
 {
-    [Table("MOVIMENTO_MANUAL")]
-    public partial class MovimentoManual
+    public partial class MOVIMENTO_MANUAL
     {
         [Key]
         [Column(Order = 0, TypeName = "numeric")]
@@ -43,6 +42,6 @@ namespace MovimentosManuais.Infra.Data.Entities
         [Column(TypeName = "numeric")]
         public decimal VAL_VALOR { get; set; }
 
-        public virtual ProdutoCosif PRODUTO_COSIF { get; set; }
+        public virtual PRODUTO_COSIF PRODUTO_COSIF { get; set; }
     }
 }

@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="AppServices\ProdutoAppService.cs" />
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
-    <Compile Include="AutoMapper\ConfigViewModels.cs" />
+    <Compile Include="AutoMapper\ViewModelAutoMapper.cs" />
     <Compile Include="Interfaces\IProdutoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ProdutoViewModel.cs" />
