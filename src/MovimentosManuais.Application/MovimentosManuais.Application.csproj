@@ -35,6 +35,7 @@
       <HintPath>..\..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,12 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppServices\ProdutoAppService.cs" />
-    <Compile Include="AutoMapper\AutoMapperConfig.cs" />
-    <Compile Include="AutoMapper\ViewModelAutoMapper.cs" />
+    <Compile Include="AppServices\MovimentoAppService.cs" />
+    <Compile Include="ViewModelAutoMapper\AutoMapperConfig.cs" />
+    <Compile Include="ViewModelAutoMapper\ViewModelAutoMapperConfig.cs" />
     <Compile Include="Interfaces\IProdutoAppService.cs" />
+    <Compile Include="Interfaces\IMovimentoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\EntityViewModel.cs" />
+    <Compile Include="ViewModels\Form\ProdutoCosifFormViewModel.cs" />
     <Compile Include="ViewModels\MovimentoManualViewModel.cs" />
     <Compile Include="ViewModels\ProdutoCosifViewModel.cs" />
+    <Compile Include="ViewModels\Form\ProdutoFormViewModel.cs" />
     <Compile Include="ViewModels\ProdutoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

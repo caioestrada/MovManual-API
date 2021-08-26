@@ -1,13 +1,10 @@
-﻿using System.Collections.Generic;
-
-namespace MovimentosManuais.Application.ViewModels
+﻿namespace MovimentosManuais.Application.ViewModels
 {
-    public class ProdutoCosifViewModel
+    public class ProdutoCosifFormViewModel
     {
         public string CodigoProduto { get; set; }
         public string CodigoCosif { get; set; }
         public string CodigoClassificacao { get; set; }
         public string Status { get; set; }
-        public ProdutoViewModel Produto { get; set; }
     }
 }

@@ -16,7 +16,8 @@ namespace MovimentosManuais.Infra.Data.Repositories
 
         public IEnumerable<PRODUTO> ObterTodos()
         {
-            return _movimentoContext.PRODUTO.Include("PRODUTO_COSIF");
+            return _movimentoContext.PRODUTO
+                .Include("PRODUTO_COSIF");
         }
     }
 }

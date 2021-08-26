@@ -5,6 +5,6 @@ namespace MovimentosManuais.Application.Interfaces
 {
     public interface IProdutoAppService
     {
-        IEnumerable<ProdutoViewModel> ObterTodos();
+        IEnumerable<ProdutoFormViewModel> ObterTodos();
     }
 }

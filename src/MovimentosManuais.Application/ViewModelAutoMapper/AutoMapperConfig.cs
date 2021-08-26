@@ -8,7 +8,7 @@ namespace MovimentosManuais.Application.AutoMapper
         {
             Mapper.Initialize(map =>
             {
-                map.AddProfile<ViewModelAutoMapper>();
+                map.AddProfile<ViewModelAutoMapperConfig>();
             });
         }
     }

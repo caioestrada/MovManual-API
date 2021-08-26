@@ -15,9 +15,9 @@ namespace MovimentosManuais.Application.AppServices
             _produtoRepository = produtoRepository;
         }
 
-        public IEnumerable<ProdutoViewModel> ObterTodos()
+        public IEnumerable<ProdutoFormViewModel> ObterTodos()
         {
-            return Mapper.Map<IEnumerable<ProdutoViewModel>>(_produtoRepository.ObterTodos());
+            return Mapper.Map<IEnumerable<ProdutoFormViewModel>>(_produtoRepository.ObterTodos());
         }
     }
 }
